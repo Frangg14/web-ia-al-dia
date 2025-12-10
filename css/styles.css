@@ -1,0 +1,400 @@
+/*Fuente de la letra*/
+@font-face {
+    font-family: "Font Squirrel: Source Sans Pro";
+    src: url("../fuente/SourceSansPro-Regular.otf");
+}
+/*Características generales*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Font Squirrel: Source Sans Pro",sans-serif;
+}
+.breadcrumb {
+    padding: 0 0.5rem;
+}
+.breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: end;
+}
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 0.25rem;
+    content: ">";
+}
+*{
+    color: #000000;
+}
+header > nav a, a{
+    text-decoration: none;
+}
+header > nav a:hover, header > h1 a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+header > nav {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+footer{
+    background-color: #000000;
+    padding-bottom: 10px;
+}
+footer a, footer p{
+    color: rgb(255, 255, 255);
+}
+footer p{
+    margin: 0;
+    padding: 0;
+}
+footer a:hover {
+    color: rgb(222, 35, 51);
+}
+.redes a:hover {
+    opacity: 0.7;
+}
+ul li{
+    list-style-type: none;
+}
+p a {
+    color: rgb(222, 35, 51);
+    font-weight: bold;
+}
+p a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+}
+.al-dia h3{
+    color: #DE2333;
+}
+.a-red, .a-red a{
+    color: rgb(222, 35, 51);
+}
+.a-red:hover, .a-red:hover a{
+    color: rgb(0, 0, 0);
+}
+.pag-actual {
+    color: #DE2333;
+}
+#bold{
+    font-weight: bolder;
+    margin-right: 5px;
+}
+q::before {
+    content: "«";
+} 
+q::after {
+    content: "»";
+}
+.bread li::before {
+    content: "> ";
+    color: rgb(222, 35, 51);;
+}
+.aplicaciones-ia article, .pelicula, .que-es-depacho-42, textarea, .grey{
+    background-color: #F4F6F7;
+}
+.aplicaciones-ia ol {
+    list-style-type: none;
+}
+h1{
+    font-size: 3em;
+    letter-spacing: -0.1em;
+}
+nav ul > li > a{
+    letter-spacing: 1px;
+}
+.titulo {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+h2{
+    text-align: center;
+}
+footer{
+    padding-bottom: 40px;
+}
+/*sticky nav*/
+
+
+/* Estilos generales */
+/* Para mobiles */
+@media (max-width: 600px){
+    *{
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+    }
+    /*Para todos los headers de los .html*/
+    header{
+        text-align: center;
+    }
+    nav {
+        padding: 0 40px 10px 10px;
+    }
+    nav ul > li{
+        padding-bottom: 10px;
+    }
+    /*Para todos los footers de los .html*/
+    footer {
+        text-align: center;
+    }
+    .info{
+        padding: 25px 5px 0 0;
+    }
+    .redes{
+        padding: 0;
+    }
+    footer .redes li{
+        display: inline-block;
+    }
+}
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 1024px){
+    *{
+        overflow-x: hidden;
+    }
+    body {
+        width: 100%;
+    }
+    /*Para todos los headers de los .html*/
+    header{
+        text-align: center;
+    }
+    nav {
+        padding: 0 40px 10px 10px;
+    }
+    nav ul > li{
+        padding-bottom: 10px;
+    }
+    /*Para todos los footers de los .html*/
+    .info{
+        padding: 25px 5px 0 0;
+    }
+    .redes{
+        padding: 0;
+    }
+    footer .redes li{
+        display: inline-block;
+    }
+    footer {
+        text-align: center;
+    }
+}
+/* Para ordenadores */
+@media (min-width: 1025px){
+    *{
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+    }
+    /*Para todos los headers de los .html*/
+    header{
+        text-align: left;
+    }
+    nav {
+        padding: 0 40px 10px 10px;
+    }
+    nav ul > li{
+        padding-bottom: 10px;
+        padding-right: 10px;
+        display: inline-block;
+    }
+    h1{
+        padding: 0 0 0 45px;
+    }
+    /*Para todos los footers de los .html*/
+    footer {
+        text-align: center;
+    }
+    .info{
+        padding: 25px 5px 0 0;
+        list-style-type: disc;
+    }
+    .info li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .redes, footer p{
+        padding: 0 500px;
+        text-align: left;
+    }
+    footer .redes li{
+        display: inline-block;
+    }
+}
+
+/*index.html*/
+@media (max-width: 600px){
+    .noticias-recursos {
+        background-image: url("../img/bg-hero-home-m.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 200px;
+    }
+    .noticias-recursos > p {
+        color: #FFFFFF;
+        padding: 40px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .p-ia + p, .p-ia {
+        padding: 0 20px;
+    }
+    figure img {
+        width: 100%;
+        height: 100%;
+    }
+    figure > figcaption{
+        padding: 20px 0 0;
+    }
+    article h3, article p {
+        padding: 0 40px;
+    }
+    article h3 {
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    .bread {
+        padding-bottom: 20px;
+    }
+
+}
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 1024px){
+    .noticias-recursos {
+        background-image: url("../img/bg-hero-home-m.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 300px;
+    }
+
+    .noticias-recursos > p {
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3.3em;
+        text-align: center;
+    }
+    .p-ia + p, .p-ia {
+        padding: 0 20px;
+    }
+    figure img {
+        width: 100%;
+        height: 100%;
+    }
+    figure > figcaption{
+        padding: 20px 0 0;
+    }
+    article h3, article p {
+        padding: 0 40px;
+    }
+    article h3 {
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    .bread {
+        padding-bottom: 20px;
+    }
+    .al-dia {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* Para ordenadores */
+@media (min-width: 1025px){
+    .noticias-recursos {
+        background-image: url("../img/bg-hero-home.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 1624px;
+        height: 300px;
+    }
+    .noticias-recursos > p {
+        color: #FFFFFF;
+        font-size: 3em;
+        text-align: center;
+        padding-top: 50px;
+        padding-right: 500px;
+        padding-left: 500px;
+        margin: 15px;
+    }
+    .p-ia, .p-ia + p {
+        padding: 0 400px;
+        font-size: 1.42em;
+        line-height: 35px;
+    }
+    figure img {
+        width: 100%;
+        height: 100%;
+    }
+    figure > figcaption{
+        padding: 20px 0 0;
+    }
+    article h3, article p {
+        padding: 0 40px;
+    }
+    article h3 {
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    .bread {
+        padding-bottom: 20px;
+    }
+    .al-dia {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 200px;
+    }
+}
+
+
+/*aplicaciones.html*/
+@media (max-width: 600px){
+
+}
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 1024px){
+    
+}
+/* Para ordenadores */
+@media (min-width: 1025px){
+
+}
+
+
+/*en-el-cine.html*/
+@media (max-width: 600px){
+
+}
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 1024px){
+
+}
+/* Para ordenadores */
+@media (min-width: 1025px){
+
+}
+
+/*despacho-42.html*/
+@media (max-width: 600px){
+
+}
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 1024px){
+
+}
+/* Para ordenadores */
+@media (min-width: 1025px){
+
+}
