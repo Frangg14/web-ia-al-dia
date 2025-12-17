@@ -110,6 +110,10 @@ nav ul > li > a{
     font-weight: bolder;
     font-size: 1.8em;
 }
+.titulo-peli{
+    font-weight: bold;
+    font-style: italic;
+}
 h2{
     text-align: center;
 }
@@ -210,10 +214,10 @@ footer{
     }
     /*Para todos los footers de los .html*/
     footer {
-        text-align: center;
+        text-align: left;
     }
     .info{
-        padding: 25px 5px 0 0;
+        padding: 25px 200px;
         list-style-type: disc;
     }
     .info li {
@@ -221,7 +225,7 @@ footer{
         margin: 0 10px;
     }
     .redes, footer p{
-        padding: 0 500px;
+        padding: 0 210px;
         text-align: left;
     }
     footer .redes li{
@@ -265,7 +269,6 @@ footer{
     .bread {
         padding-bottom: 20px;
     }
-
 }
 /* Para tablets */
 @media (min-width: 601px) and (max-width: 1024px){
@@ -285,6 +288,7 @@ footer{
         justify-content: center;
         font-size: 3.3em;
         text-align: center;
+        padding: 0 100px;
     }
     .p-ia + p, .p-ia {
         padding: 0 20px;
@@ -372,6 +376,9 @@ footer{
     .aplicaciones-ia ol {
         padding: 0;
     }
+    .aplicaciones-ia div{
+        padding: 20px;
+    }
 }
 /* Para tablets */
 @media (min-width: 601px) and (max-width: 1024px){
@@ -384,6 +391,9 @@ footer{
         grid-template-columns: 1fr 1fr;
         margin: 0;
         padding: 0;
+    }
+    ol > li{
+        padding: 10px
     }
 }
 /* Para ordenadores */
@@ -401,20 +411,62 @@ footer{
         margin: 0;
         padding: 0 200px 20px;
     }
+    ol > li{
+        padding: 10px
+    }
 }
 
 
 /*en-el-cine.html*/
 @media (max-width: 600px){
-
+    .pelicula iframe {
+        width: 100%;
+        height: 200px;
+    }
+    .pelicula{
+        padding: 20px 0;
+        margin: 0 20px;
+    }
+    .peliculas-ia h2{
+        font-size: 2em;
+        font-weight: bolder;
+        padding: 25px;
+    }
+    .peliculas-ia div{
+        padding-bottom: 20px;
+    }
 }
 /* Para tablets */
 @media (min-width: 601px) and (max-width: 1024px){
-
+    .pelicula{
+        padding: 20px 0;
+        margin: 0 20px;
+    }
+    .pelicula iframe {
+        width: 100%;
+        height: 400px;
+    }
+    .peliculas-ia h2{
+        font-size: 2em;
+        font-weight: bolder;
+        padding: 25px;
+    }
+    .peliculas-ia div{
+        padding-bottom: 30px;
+    }
 }
 /* Para ordenadores */
 @media (min-width: 1025px){
-
+    .peliculas-ia h2{
+        font-size: 2em;
+        font-weight: bolder;
+        padding: 25px;
+    }
+    .wrapper-films{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 150px;
+    }
 }
 
 /*despacho-42.html*/
