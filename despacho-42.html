@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="despacho-42">
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <ol>
                 <li><a href="index.html">Inicio</a></li>
@@ -29,7 +29,7 @@
 
         <figure>
             <img src="img/n-despacho42-post.jpg" alt="Despacho 42">
-            <figcaption>Por Alba Pueyo i Busquets | <data value="2023-02-23">23 de febrero de 2023</data></figcaption>
+            <figcaption><small>Por Alba Pueyo i Busquets <span>| </span><data value="2023-02-23">23 de febrero de 2023</data></small></figcaption>
         </figure>
 
         <article class="ia-y-arte">
@@ -132,8 +132,9 @@
                     <input type="email" name="correo" id="correo" class="grey" required>
                 </div>
                 <div class="elementos-form">
-                    <input type="checkbox" name="privacidad" id="privacidad" required>
-                    <label for="privacidad">He leído y acepto la <a href="">política de privacidad</a></label>
+                    <label for="privacidad">
+                        <input type="checkbox" name="privacidad" id="privacidad" required>
+                        He leído y acepto la <a href="">política de privacidad</a></label>
                 </div>
                 <div class="elementos-form">
                     <input type="submit" value="ENVIAR EL COMENTARIO">
@@ -144,15 +145,21 @@
 
     <aside>
         <h2>Artículos recientes</h2>
-        <div class="aside-article">
-            <img src="img/n-geoffrey-hinton-thumbnail.jpg" alt="Geoffrey Hinton">
-            <p class="aside-article-titulo">Geoffrey Hinton advierte de los peligros de la IA</p>
-            <data value="2023-05-02">02-05-2023</data>
-        </div>
-        <div class="aside-article">
-            <img src="img/n-ue-ia-thumbnail.jpg" alt="IA en la UE">
-            <p class="aside-article-titulo">Bruselas prepara la ley de IA para regular su avance</p>
-            <data value="2023-04-05">20-04-2023</data>
+        <div class="wrapper-aside">
+            <div class="aside-article">
+                <img src="img/n-geoffrey-hinton-thumbnail.jpg" alt="Geoffrey Hinton">
+                <div>
+                    <p class="aside-article-titulo">Geoffrey Hinton advierte de los peligros de la IA</p>
+                    <data value="2023-05-02">02-05-2023</data>
+                </div>
+            </div>
+            <div class="aside-article">
+                <img src="img/n-ue-ia-thumbnail.jpg" alt="IA en la UE">
+                <div>
+                    <p class="aside-article-titulo">Bruselas prepara la ley de IA para regular su avance</p>
+                    <data value="2023-04-05">20-04-2023</data>
+                </div>
+            </div>
         </div>
     </aside>
 

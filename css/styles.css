@@ -120,6 +120,21 @@ h2{
 footer{
     padding-bottom: 40px;
 }
+input, textarea{
+    border: none;
+}
+form a {
+    color: #DE2333;
+}
+form a:hover {
+    color: rgb(0, 0, 0);
+}
+input[type="submit"]{
+    background-color: #DE2333;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
 /*sticky nav*/
 
 
@@ -286,7 +301,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 3.3em;
+        font-size: 3;
         text-align: center;
         padding: 0 100px;
     }
@@ -471,7 +486,85 @@ footer{
 
 /*despacho-42.html*/
 @media (max-width: 600px){
-
+    .despacho-42 > figure{
+        margin: 30px 20px;
+    }
+    .despacho-42 figure figcaption{
+        padding: 10px 0 0;
+    }
+    small span {
+        margin: 0 15px;
+    }
+    .ia-y-arte p{
+        padding: 0 20px;
+    }
+    .ia-y-arte h2{
+        font-size: 2em;
+        padding: 0 25px;
+        text-align: left;
+    }
+    .ia-y-arte h3, .ia-y-arte h4{
+        font-size: 1.5em;
+        padding: 0 20px;
+    }
+    .que-es-depacho-42 {
+        margin-top: 40px;
+    }
+    .que-es-depacho-42 img {
+        padding: 15px;
+        padding-bottom: 0;
+        width: 20%;
+        border-radius: 30%;
+    }
+    .que-es-depacho-42 h2, .que-es-depacho-42 h3{
+        font-size: 2em;
+    }
+    .que-es-depacho-42 h2, .que-es-depacho-42 p, .que-es-depacho-42 h3, .que-es-depacho-42 .bread{
+        padding: 0 30px;
+    }
+    .container-form h2{
+        font-size: 2em;
+        padding: 0 20px;
+        text-align: left;
+    }
+    .container-form form, .container-form p{
+        padding: 0 20px;
+    }
+    .container-form form label {
+        display: block;
+        margin-top: 15px;
+    }
+    .elemento-check .privacidad{
+        display: inline-block;
+    }
+    textarea{
+        width: 100%;
+        height: 100px;
+    }
+    input[type="text"], input[type="email"]{
+        width: 100%;
+        height: 30px;
+    }
+    input[type="submit"]{
+        margin-top: 20px;
+        padding: 5px;
+        height: 30px;
+    }
+    aside img{
+        width: 20%;
+        border-radius: 50%;
+    }
+    .aside-article{
+        display: flex;
+        flex-direction: row;
+        border-bottom: #000000 dotted 1px;
+    }
+    .aside-article > img{
+        padding: 10px;
+    }
+    .wrapper-aside {
+        padding: 5px 0 30px 0;
+    }
 }
 /* Para tablets */
 @media (min-width: 601px) and (max-width: 1024px){
