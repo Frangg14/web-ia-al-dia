@@ -136,8 +136,15 @@ input[type="submit"]{
     cursor: pointer;
 }
 /*sticky nav*/
-
-
+header > nav {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 100;
+}
+.contenedor {
+    height: 150vh;
+}
 /* Estilos generales */
 /* Para mobiles */
 @media (max-width: 600px){
@@ -301,9 +308,10 @@ input[type="submit"]{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 3;
+        font-size: 3em;
         text-align: center;
         padding: 0 100px;
+        margin-top: 80px;
     }
     .p-ia + p, .p-ia {
         padding: 0 20px;
@@ -568,9 +576,211 @@ input[type="submit"]{
 }
 /* Para tablets */
 @media (min-width: 601px) and (max-width: 1024px){
-
+    .despacho-42 > figure{
+        margin: 30px 20px;
+    }
+    .despacho-42 figure figcaption{
+        padding: 10px 0 0;
+    }
+    small span {
+        margin: 0 15px;
+    }
+    .ia-y-arte p{
+        padding: 0 20px;
+    }
+    .ia-y-arte h2{
+        font-size: 2em;
+        padding: 0 25px;
+        text-align: left;
+    }
+    .ia-y-arte h3, .ia-y-arte h4{
+        font-size: 1.5em;
+        padding: 0 20px;
+    }
+    .que-es-depacho-42 {
+        margin-top: 40px;
+    }
+    .que-es-depacho-42 img {
+        padding: 10px;
+        padding-bottom: 0;
+        width: 10%;
+        border-radius: 30%;
+    }
+    .que-es-depacho-42 h2, .que-es-depacho-42 h3{
+        font-size: 2em;
+    }
+    .que-es-depacho-42 h2, .que-es-depacho-42 p, .que-es-depacho-42 h3, .que-es-depacho-42 .bread{
+        padding: 0 20px;
+    }
+    .container-form h2{
+        font-size: 2em;
+        padding: 0 20px;
+        text-align: left;
+    }
+    .container-form form, .container-form p{
+        padding: 0 20px;
+    }
+    .container-form form label {
+        display: block;
+        margin-top: 15px;
+    }
+    .elemento-check .privacidad{
+        display: inline-block;
+    }
+    textarea{
+        width: 100%;
+        height: 100px;
+    }
+    input[type="text"], input[type="email"]{
+        width: 100%;
+        height: 30px;
+    }
+    input[type="submit"]{
+        margin-top: 20px;
+        padding: 5px;
+        height: 30px;
+    }
+    aside img{
+        width: 20%;
+        border-radius: 50%;
+    }
+    .aside-article{
+        display: flex;
+        flex-direction: row;
+        border-bottom: #000000 dotted 1px;
+    }
+    .aside-article > img{
+        padding: 10px;
+    }
+    .wrapper-aside {
+        padding: 5px 80px 30px 80px;
+    }
+    .barra-lateral h2{
+        font-size: 1.5em;
+        text-align: left;
+        padding: 0 80px;
+    }
 }
 /* Para ordenadores */
 @media (min-width: 1025px){
-
+    .despacho-42 > figure{
+        width: 50%;
+        margin: 30px 85px;
+        padding: 20px 80px;
+    }
+    .despacho-42 figure figcaption{
+        padding: 10px 0 0;
+    }
+    .despacho-42 nav {
+        padding: 0 135px;
+        margin: 0 20px;
+    }
+    small span {
+        margin: 0 15px;
+    }
+    .ia-y-arte p{
+        padding: 0 85px;
+        width: 50%;
+        margin: 20px 80px;
+    }
+    .ia-y-arte h2{
+        font-size: 2em;
+        padding: 0 85px;
+        text-align: left;
+        width: 50%;
+        margin: 0 80px;
+    }
+    .ia-y-arte h3, .ia-y-arte h4{
+        font-size: 1.5em;
+        padding: 0 90px;
+        width: 50%;
+        margin: 0 80px;
+    }
+    .que-es-depacho-42 {
+        margin-top: 40px;
+        width: 70%;
+        margin: 0 120px;
+    }
+    .que-es-depacho-42 img {
+        padding: 15px;
+        padding-bottom: 0;
+        width: 10%;
+        border-radius: 30%;
+    }
+    .que-es-depacho-42 h2, .que-es-depacho-42 h3{
+        font-size: 2em;
+    }
+    .que-es-depacho-42 {
+        display: flex;
+        flex-direction: row;
+    }
+    .que-es-depacho-42 h2, .que-es-depacho-42 p, .que-es-depacho-42 h3, .que-es-depacho-42 .bread{
+        padding: 0 30px;
+    }
+    .despacho-42-wrapper {
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    .despacho-42-content {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .despacho-42 h2 {
+        text-align: left;
+    }
+    .container-form h2{
+        font-size: 2em;
+        padding: 0 20px;
+        text-align: left;
+        margin-top: 40px;
+        width: 50%;
+        margin: 20px 120px;
+    }
+    .container-form form, .container-form p{
+        padding: 0 20px;
+        margin-top: 40px;
+        width: 50%;
+        margin: 0 120px;
+    }
+    .container-form form label {
+        display: block;
+        margin-top: 15px;
+    }
+    .elemento-check .privacidad{
+        display: inline-block;
+    }
+    textarea{
+        width: 100%;
+        height: 100px;
+    }
+    input[type="text"], input[type="email"]{
+        width: 100%;
+        height: 30px;
+    }
+    input[type="submit"]{
+        margin-top: 20px;
+        padding: 5px;
+        height: 30px;
+    }
+    aside img{
+        width: 10%;
+        border-radius: 50%;
+    }
+    .aside-article{
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+        border-bottom: #000000 dotted 1px;
+        margin: 10px 120px;
+    }
+    .aside-article > img{
+        padding: 10px;
+    }
+    .wrapper-aside {
+        padding: 5px 0 30px 0;
+    }
+    /*Para el aside en formato para ordenadores no me ha sido posible hacerlo de la misma 
+    manera de la que está establecida en el mockup para escritorio de despacho-42*/
 }
